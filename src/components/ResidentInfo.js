@@ -17,6 +17,9 @@ const ResidentInfo = ({url}) => {
 
     return (
         <div className='resident-info'>
+
+            <div className='resident-card'>
+
             <li>
                 <img src={resident.image} alt="" />
                 <h3>{resident.name}</h3>
@@ -25,7 +28,8 @@ const ResidentInfo = ({url}) => {
                 <h3><b>Episodes where it appear: </b>{resident.episode?.length}</h3>
 
             </li>
-            
+            </div>
+          
         </div>
     );
 };

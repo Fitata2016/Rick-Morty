@@ -1,7 +1,74 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: #0C292E;
+}
 .App {
   text-align: center;
 }
+.resident-info{
+ 
+  width: 30%;
+  
+}
+ul{
+  display: flex;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+}
+.resident-card{
+  margin: 5px;
+  background-color: #031518;;
+  border-radius: 10px;
+  padding: 6px;
+  color: #E5E5E5;
+}
 .resident-info img{
  width: 200px;
+ margin: 5px;
+}
+.resident-info li{
+  list-style: none;
+}
+.data-location{
+  display: flex;
+  justify-content: space-evenly;
+  color: #E5E5E5;
+  margin: 30px;
+}
+.nav-bar{
+  color: #061518;;
+ 
+  padding: 30px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(https://eloutput.com/app/uploads-eloutput.com/2021/01/Rick-morty-9.jpg);
+}
+.nav-bar h1{
+  margin: 30px;
+  font-size: 60px;
+}
+.nav-bar h2{
+  margin: 30px;
+}
+.nav-bar input{
+  width: 50%;
+  height: 30px;
+  text-align: center;
+}
+.nav-bar button{
+  height: 30px;
+  text-align: center;
+  padding-left: 4px;
+  padding-right: 4px;
+  background:rgba(255, 255, 255, 0.1);
+  color: #061518;;
+  border-color: #061518;;
+
 }
 

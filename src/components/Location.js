@@ -28,21 +28,25 @@ const Location = () => {
      }
     return (
         <div>
+             
+            <div className='nav-bar'>
+                <h1>Rick & Morty</h1>
+                <input 
+                    type="text"
+                    onChange={e=> setId(e.target.value)}
+                    value={id}
+                    placeholder={"Type a location ID to search!"}   
+                />
+                <button onClick={searchLocation}><b>Search</b></button>
+                <h2>{location.name}</h2>
+            </div>
+            <div className='data-location'>
             
-            <input 
-                type="text"
-                onChange={e=> setId(e.target.value)}
-                value={id}
-                placeholder={"Type a location ID to search!"}   
-            />
-            <button onClick={searchLocation}>Search</button>
-            <h1>Rick & Morty</h1>
-            <h2>{location.name}</h2>
-            <h3>
-                <b>Type: </b>{location.type} 
-                <b>Dimension: </b>{location.dimension}
-                <b>Population: </b>{location?.residents?.length}
-            </h3>
+                <p><b>Type: {location.type} </b></p>
+                <p><b>Dimension: {location.dimension}</b></p>
+                <p><b>Population: {location?.residents?.length}</b></p>
+            
+            </div>
             
             <ul>
             {location.residents?.map(resident => (
